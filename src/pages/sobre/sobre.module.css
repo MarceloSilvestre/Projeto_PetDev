@@ -1,0 +1,67 @@
+.sobre {   
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 61px 224px 29px 224px;
+}
+
+.letraBranca {   
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 28px 224px 281px 224px;
+}
+
+.letraPreta {  
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 28px 224px 218px 224px;
+}
+
+.h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+}
+
+.h2 {
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+    .sobre, .letraBranca, .letraPreta {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre, .letraBranca, .letraPreta {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sobre, .letraBranca, .letraPreta {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .h1 {
+        font-size: 36px;
+    }
+
+    .h2, .p {
+        font-size: 18px;
+    }
+}

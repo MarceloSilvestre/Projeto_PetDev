@@ -1,0 +1,27 @@
+
+.specie_button{
+    transition: transform 0.3s ease;
+
+}
+
+.specie_button:hover {
+    transform: scale(1.1);
+}
+
+.image{
+    flex: 0 0 40%;
+    width: clamp(50px, 2vw, 500px);
+    
+}
+
+.text{
+    text-align: center;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(15px, 1.2vw, 40px);
+    text-transform: capitalize;
+}
+
+.conteiner{
+    text-decoration: none;
+}

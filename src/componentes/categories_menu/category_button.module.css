@@ -1,0 +1,55 @@
+.name {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(15px, 1.3vw, 40px);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.image {
+    width: 15vw;
+}
+
+.button {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: grid;
+    justify-content: center;
+}
+ 
+.button:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    margin: 10%;
+}
+
+.speciesContainer {
+    /* Adiciona uma transição suave para a altura e opacidade */
+    opacity: 1;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.slideEnter {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.slideEnterActive {
+    max-height: 500px; /* ou o valor que você quiser para a altura máxima */
+    transition: max-height 300ms ease-in;
+}
+
+.slideExit {
+    max-height: 500px; /* ou o valor que você definiu em slideEnterActive */
+    overflow: hidden;
+}
+
+.slideExitActive {
+    max-height: 0;
+    transition: max-height 300ms ease-out;
+}

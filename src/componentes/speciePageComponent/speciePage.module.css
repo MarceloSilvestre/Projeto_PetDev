@@ -1,0 +1,227 @@
+.contentConteiner {
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.contentItem {
+    margin: 15px;
+    flex: 1;
+  }
+  
+.animalImage {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    min-width: 300px; /* Define o tamanho mínimo da largura da imagem */
+    padding: 3%;
+  }
+
+
+.tittle{
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(20px,3vw,80px);
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+
+.firstTittle{
+  margin-left: 10%;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(20px,2.7vw,80px);
+  text-transform: uppercase;
+  }
+
+.youNeedToKnow h2{
+  margin-top: 4%;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px; /* Adiciona espaço entre o título e o texto */
+    margin-left: 10%;
+    margin-right: 10%;
+
+    font-size: clamp(14px, 1.6vw, 50px);
+    text-align: left ;
+    
+  }
+
+  .characteristics {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+  }
+  
+  .characteristics img {
+    width: 50px; /* Ajuste conforme necessário */
+    height: 50px;
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */  
+    border: 1px solid #ebebeb;
+
+  }
+  
+  .characteristics .text {
+    flex: 1; /* Para que o texto ocupe todo o espaço disponível */
+    
+  }
+  
+
+.blackRetangle{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5%;
+  border-radius: 400px;
+  overflow: hidden;
+  } 
+
+
+.youNeedToKnow{
+  background-color: white;
+}
+
+.recommendedProducts{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.productsConteiner {
+  display: flex;
+  flex-wrap: wrap; /* Para que os elementos possam quebrar para a próxima linha se não houver espaço suficiente */
+}
+
+.product {
+  text-align: center; /* Centraliza o texto */
+  flex: 0 0 calc(33.33% - 4%); /* Cada produto ocupa 1/3 do espaço disponível, com uma margem de 10px em cada lado */
+  margin: 2%; /* Espaçamento entre os produtos */
+}
+
+.product img {
+  width: 100%; /* Para garantir que a imagem ocupe toda a largura do contêiner do produto */
+}
+
+.product p {
+  display: block; /* Faz com que o texto fique abaixo da imagem */
+}
+.curiosities h2{
+  color: white;
+}
+
+.curiosities{
+  margin-top: 4%;
+  padding-top: 4%;
+  background-color: black;
+}
+
+.curiositiesConteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  
+
+}
+
+.curiosity {
+  text-align: center; /* Centraliza o título */
+  width: calc(50% - 12%); /* Largura de 50% do contêiner pai, com margem de 10px em cada lado */
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 6%;
+  box-sizing: border-box;
+  
+  }
+
+.curiosityTittleBox{
+  background: #664300;
+  border-radius: 200px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
+}
+
+.curiosityTittle{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(15px,1.3vw,40px);
+  text-transform: capitalize;
+}
+
+.curiosityText {
+  color: white;
+  margin-top: 10px; /* Adiciona espaço entre o título e o texto */
+  margin: 10%;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px; /* Adiciona espaço entre o título e o texto */
+  font-size: clamp(16px, 1.4vw, 50px);
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer{
+    align-items: center;
+
+  }
+  .contentItem {
+    margin: 10px;
+  }
+  .content {
+    flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+  }
+
+
+  .firstTittle {
+    text-align: center;
+  }
+  .text {
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
+
+  .blackRetangle{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+    border-radius: 75px;
+    overflow: hidden;
+  } 
+  .curiosityTittle{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(14px,1vw,40px);
+    text-transform: capitalize;
+  }
+
+  .curiosityTittleBox{
+    background: #664300;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+  }
+  .curiosityText {
+    color: white;
+    margin-top: 10px; /* Adiciona espaço entre o título e o texto */
+    margin: 10%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px; /* Adiciona espaço entre o título e o texto */
+    font-size: clamp(12px, 1vw, 50px);
+    text-align: left;
+  }
+}

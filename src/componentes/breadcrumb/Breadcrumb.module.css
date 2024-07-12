@@ -1,0 +1,22 @@
+.crumb a {
+    font-family: "Roboto";
+    max-width: 100%;
+    margin-left: 3px;
+    color:#000;
+    font-weight: 400;
+}
+
+
+.crumb:after {
+    content: '>';
+    margin-left: 10px;
+    margin-right: 5px;   
+  }
+
+  .crumb:last-child:after {
+    content: none; 
+  }
+
+
+
+

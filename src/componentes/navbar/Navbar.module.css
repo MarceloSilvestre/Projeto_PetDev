@@ -1,0 +1,47 @@
+.animal {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.list {
+    
+    list-style: none;
+    text-decoration: none;  
+    margin-right: 1%;  
+}
+
+.item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 5%px;
+    color: #fff;
+    font-size: clamp(10px, 1.2vw, 30px);
+}
+
+.item, .logo {
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+.item:hover, .logo:hover{
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.item a {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+     
+}
+
+.logo {
+    margin-left: 40%;
+    width: clamp(50px,10vw, 120px); 
+}

@@ -1,0 +1,65 @@
+/* Container principal */
+.container {
+    background-color: #000;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap; /* Impede a quebra de linha */
+    overflow: hidden; /* Esconde overflow para garantir que tudo fique na tela */
+  }
+  
+  .logo {
+    width: clamp(300px, 15vw, 15000px); 
+    margin-top: -10%;
+  }
+
+  @media (max-width: 600px) {
+    .logo {
+      width: clamp(100px, 10vw, 300px);
+      margin-left: 5%;
+      margin-bottom:20%;
+    }
+  }
+  
+  .containerItem {
+    flex: 1 1 33.33%; /* Cada item ocupa um terço da largura */
+    margin-top: 5%;
+  }
+  
+  /* Estilo do texto */
+  .text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: clamp(8px, 1.8vw, 40px);
+  }
+  
+  .listItem {
+    list-style: none;
+    padding: 0;
+    margin-left: 50%;
+
+  }
+  
+  .listItem a {
+    text-decoration: none; 
+    color: #fff; 
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: clamp(8px, 1.8vw, 40px);
+  }
+  
+
+  .contact {
+    text-align: center;
+    color: #fff;
+  }
+  
+  
+  .listItem, .logo{
+    transition: transform 0.3s ease;
+    
+  }
+
+  .listItem:hover, .logo:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+  }

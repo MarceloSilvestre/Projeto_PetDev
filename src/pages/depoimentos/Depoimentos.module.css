@@ -1,0 +1,54 @@
+.container {
+  background-image: url("/public/images/backgroud\ depoimentos.png");
+  height: 50em;
+}
+
+.container h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+}
+
+.carrossel img {
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+.parceiros {
+  display: flex;
+  margin-left: 17%;
+  min-width: 1024px;
+  padding: 3em;
+}
+
+.lista_parceiros {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: auto; /* Ajusta a altura para auto */
+  }
+
+  .container h1 {
+    font-size: 2rem; /* Diminui o tamanho da fonte */
+  }
+
+  .carrossel img {
+    width: 100%; /* Ajusta a largura da imagem para 100% */
+    left: 0; /* Remove o deslocamento à esquerda */
+  }
+
+  .parceiros {
+    flex-direction: column; /* Muda a direção do flex para coluna */
+    margin-left: 0; /* Remove a margem esquerda */
+    min-width: 0; /* Remove a largura mínima */
+  }
+}
